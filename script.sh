@@ -18,8 +18,8 @@ case $METHOD in
                 ;;
         git)
                 git add $SOURCE
-                git commit -m"backup $SOURCE"
-                git push origin main
+		git commit -m"backup $(date +%d-%m-%Y)"
+                git push
                 ;;
 esac
 
